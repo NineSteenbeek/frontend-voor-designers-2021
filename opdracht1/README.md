@@ -16,4 +16,12 @@ Design principe 11 gaat over visuele hiërarchie. Ik heb dit toegepast door te w
 Zo heb ik alle belangrijke elementen op het scherm bij elkaar in de buurt geplaatst en deze te kaderen. Ook heb ik elementen die belangrijker zijn groter gemaakt en elementen die minder belangrijk kleiner gemaakt met een minder prominente kleur.
 
 ## code
-Leg de code uit.
+In de HTML zijn eigenlijk maar een paar elementen belangrijk, dat de section met classname playlist, die al het dragbare omvat, de dropzone die hier in ligt (de zone waarin de elementen 'gedropt' kunnen worden en de draggables. De draggables zien er door de css uit als liedjes van Spotify. Dit zijn de elementen die versleept kunnen worden. Wanneer er geprobeerd wordt om aan een draggable te trekken wordt de JS getriggerd zodat dit mogelijk is.
+In de CSS is het geheel gestyled om het netjes vorm te geven. 
+De JS is het belangrijkste gedeelte. De JS wordt getriggerd wanneer je een draggable element probeert te draggen. 
+Zodra je een element probeert te verslepen, wordt via de JS, doormiddel van een eventlistener (die getriggerd wordt bij 'ondrag) de achtergrond kleur verandert. Dit is voor de gebruiker feedback dat hij iets aan het draggen is.
+Zodra je het element loslaat (eventlistener 'dragend') wordt via de JS de zojuist toegevoegde achtergrondkleur weer gereset.
+Bij eventlistener 'dragover' wordt de default uitgezet via  'event.preventDefault();' omdat anders het droppen van een element wat gedragged wordt niet toegestaan is. 
+Via de eventlistener 'dragenter' wordt bepaald wanneer een element in een valide drop-gebied komt. Wanneer het item gelijk staat (==) aan de class "dropzone" wordt dit betreffende gebied blauw zodat de gebruiker weet dat hij het element hier kan plaatsen. 
+Wanneer het element dit drop-gebied verplaatst(eventlistener'dragleave') wordt de achtergrondkleur weer gereset.
+De laatste eventlistener, drop, zorgt ervoor dat wanneer het element losgelaten wordt boven het valide dropgebied de achtergrond kleur van het element dat eerst gedragged werd weer verandert naar de normale kleur. Ook wordt het item via appendChild toegevoegd aan de html (ik begreep dit laatste onderdeel niet helemaal).
