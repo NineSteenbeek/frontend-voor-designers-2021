@@ -112,8 +112,13 @@ img {
     margin: 3px;
 }
 
+.tekst p:first-of-type {
+    font-size: 16px;
+}
+
 .tekst p:nth-of-type(2) {
     color: gray;
+    font-size: 14px;
 }
 
 .super-container {
