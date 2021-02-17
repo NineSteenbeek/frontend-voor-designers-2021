@@ -7,7 +7,7 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 # Project titel
 Ik heb een drag and drop interface gecreëerd waarin de gebruiker nummers kan sorteren. 
-En voeg een link naar je demo toe.
+https://ninesteenbeek.github.io/frontend-voor-designers-2021/opdracht1/Opdracht%201_Versie%202/index.html
 
 ## interface
 Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
