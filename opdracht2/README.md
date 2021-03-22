@@ -8,7 +8,7 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 # Project titel
 Voor opdracht 2 van Frontend voor Designers heb ik een pagina gemaakt die in twee verschillende modes in te stellen is. Dit gaat om een dark-mode en de 'normale' light-mode. 
 Hierbij de link naar mijn demo!
-https://ninesteenbeek.github.io/frontend-voor-designers-2021/opdracht2/demo/index.html****
+https://ninesteenbeek.github.io/frontend-voor-designers-2021/opdracht2/demo/index.html
 
 
 ## interface
@@ -31,4 +31,9 @@ Ik heb dit toegepast door de knop het uiterlijk te geven van een toggle knop. He
 De UI events die ik heb toegepast zijn click en keypress. Ik heb keypress specifiek gemaakt voor de entertoets. Dit heb ik gedaan door in de js te stellen dat de functie van de knop toggelen, alleen geldt wanneer er op enter wordt gedrukt.
 
 ## code
-Leg de code uit.
+De code code heeft twee delen, een deel voor de interactie die getriggerd wordt door het klikken op de toggle knop, en het andere deel wat getriggerd wordt door het klikken op de enter toets.
+Het eerste deel werkt als volgt;
+Een variabele met de naam check wordt opgesteld met document.getElementById('check'). Deze variabele slaat op de checkbox in de html.
+Vervolgens wordt er aan deze variabele een eventlistener toegevoegd. Dit is de listener change. Deze eventlistener gaat af wanneer er iets verandert aan het input veld, waar de checkbox deel van uitmaakt. Wanneer je dus klikt op de checkbox, wordt de checkbox gechecked. Er verandert hiermee dus iets binnen het input veld. Hiermee wordt de code gevuurd. Er wordt dan via de CSS andere styling meegegeven aan de toggle knop, met :checked. Vervolgens wordt er ook nog gespecificeerd dat wanneer de toggle knop checked is, de achtergrond kleur van de body verandert naar een donkere kleur. Dit gebeurt met een transistion-delay.
+Voor het tweede deel van de code gebeurt eigenlijk exact hetzelfde, maar dan gelinkt aan een specifieke knop. 
+Dit heb ik eerst gedaan door de toets in een variabele op te slaan. Daarna heb ik gesteld dat wanneer deze knop wordt ingedrukt, en de checkbox niet al op checked staat, de code van het eerste gedeelte gelanceerd wordt, en de body een donkere achtergrond krijgt. Wanneer de checkbox wel al op check staat, wordt deze simpel gedeselecteerd en verandert daarmee ook de toegevoegde CSS.
