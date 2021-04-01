@@ -7,7 +7,7 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 # Project titel
 Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+https://ninesteenbeek.github.io/frontend-voor-designers-2021/opdracht3/demo/versie2/index.html
 
 ## interface
 Leg de interface uit.
