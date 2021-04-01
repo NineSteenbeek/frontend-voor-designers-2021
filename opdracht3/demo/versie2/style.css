@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease;
+}
+body.dark {
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,144,255,1) 100%);
+    transition: transform 0.s ease;
+
+}
+
+.checkbox {
+    opacity: 15%;
+    height: 45px;
+    width: 60px;
+    position: absolute;
+}
+
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.toggle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    margin-top: 100px;
+
+}
+
+input[type="submit"] {
+    padding: 15px 30px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input input[type="text"] {
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+.submit:hover{
+    background-color: #CCCCFF;
+    color: white;
+    transition: 0.5s;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #e7e7e7;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+.card p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #222222;
+}
+.card p:first-of-type{
+    padding-top: 10px;
+}
+.card h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
