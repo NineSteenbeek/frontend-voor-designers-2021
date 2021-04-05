@@ -46,3 +46,11 @@ Wanneer de gebruiker een niet bestaande stad invult, of deze verkeerd spelt, kan
 .catch(err => alert("Check if your spelling is correct!"));
 
 Voor de toggle knop geldt exact dezelfde code als uitgelegd bij opdracht 2.
+
+## Verschillende versies
+In de eerste instantie wilde ik een site maken waar je het weer voor Amsterdam kon zien. Dit is dan ook wat ik voor versie 1 heb gedaan. Nadat ik dit had gemaakt kwam ik erachter dat het wel mee viel hoe lastig het is om met de API te werken en ben ik onderzoek gaan doen naar hoe ik een site met OpenWeatherMap kon maken die wat interactiever was. Ik kwam via YouTube filmpjes op het idee om een zoekbalk te maken waarin je zelf de betreffende stad in kon voeren. Met behulp van tutorials heb ik dit uiteindelijk gemaakt, het duurde even voor ik de code begreep, maar na een tijdje oefenen denk ik dat ik het nu onder de knie heb en een leuk interactief ontwerp heb. 
+
+## Bronnen
+https://www.youtube.com/watch?v=f__x1VofV2Q
+https://www.youtube.com/watch?v=KqZGuzrY9D4
+https://www.youtube.com/watch?v=GXrDEA3SIOQ
